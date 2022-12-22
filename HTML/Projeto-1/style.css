@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:ital,wght@0,700;1,400&display=swap');
+/*font-family: 'Inter', sans-serif;
+font-family: 'Open Sans', sans-serif;*/
+
+:root {
+    --fonte1: 'Inter', sans-serif; 
+    --fonte2: 'Open Sans', sans-serif;
+    /*para chamar a fonte Inter basta:
+    font-family: var(--fonte1);*/
+}
