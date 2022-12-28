@@ -9,8 +9,15 @@ font-family: 'Open Sans', sans-serif;*/
     --fonte2: 'Open Sans', sans-serif;
     --color1: #7D7987;
     --color2: #FF9900;
+    --color-line: #ECEFF2;
     /*para chamar a fonte Inter basta:
     font-family: var(--fonte1);*/
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
 }
 
 body {
@@ -18,6 +25,10 @@ body {
     text-align: center;
     width: 593px;
     margin: auto;
+}
+
+header {
+    margin: 0px auto 32px;
 }
 
 img {
@@ -29,19 +40,37 @@ h1 {
     font-size: 49px;
     line-height: 56px;
     font-weight: normal;
+    margin-bottom: 32px;
 }
 
 h1 span {
     font-weight: bold;
 }
 
+section {
+    margin: 0px auto 72px;
+}
 
 p {
     color: var(--color1);
     font-size: 14px;
     line-height: 28px;
+    margin-bottom: 28px;
 }
 
 span, a {
     color: var(--color2);
+}
+
+footer {
+    margin-bottom: 28px;
+}
+
+.line {
+    border: 1px solid var(--color-line);
+    margin: 0px auto 8px;
+}
+
+footer a + a {
+    margin-left: 28px;
 }
