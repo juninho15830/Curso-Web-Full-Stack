@@ -31,7 +31,7 @@ header {
     margin: 0px auto 32px;
 }
 
-img {
+#img1 {
     margin: 0px auto 72px;
 }
 
@@ -73,4 +73,10 @@ footer {
 
 footer a + a {
     margin-left: 28px;
+}
+
+#balls {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
 }
