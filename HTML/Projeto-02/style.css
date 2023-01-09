@@ -17,9 +17,16 @@
 }
 
 body {
-    width: 1000px;
-    margin: 65px auto 0;
+    min-height: 100vh;
     font-family: var(--font1);
+    background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+}
+
+#page {
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 65px 10px 0px;
 }
 
 nav {
@@ -52,7 +59,6 @@ h1 {
     color: var(--color2);
     font-weight: normal;
     width: 490px;
-    margin-bottom: 40px;
 }
 
 h1 span {
@@ -60,10 +66,17 @@ h1 span {
     font-weight: bold;
 }
 
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 p {
     color: var(--color1);
     font-size: 14px;
     line-height: 28px;
+    margin: 40px 0px;
 }
 
 button {
@@ -71,6 +84,23 @@ button {
     font-family: var(--font1);
     color: white;
     background-color: var(--color-button);
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 32px 15px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #599b84;
+    transition-duration: 0.5s;
+}
+
+footer {
+    text-align: center;
 }
 
 footer p {
@@ -84,5 +114,12 @@ footer a {
 }
 
 footer a:hover {
-    text-decoration: underline;
+    color: var(--color-button);
+    transition-duration: 0.5s;
+}
+
+#balls {
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }
