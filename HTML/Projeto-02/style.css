@@ -22,7 +22,7 @@ body {
     background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
 }
 
-#page {
+.page {
     max-width: 1000px;
     min-width: 300px;
     margin: 0 auto;
@@ -46,10 +46,12 @@ ul {
 
 ul a {
     text-decoration: none;
+    opacity: 0.5;
 }
 
 ul a:hover {
     font-weight: bold;
+    opacity: 1;
 }
 
 h1 {
