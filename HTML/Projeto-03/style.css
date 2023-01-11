@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&family=Poppins&display=swap');
+
+:root {
+    --font1: 'Archivo', sans-serif;
+    --font2: 'Poppins', sans-serif;
+}
+
