@@ -23,7 +23,8 @@ font-family: 'Open Sans', sans-serif;*/
 body {
     font-family: var(--fonte2);
     text-align: center;
-    width: 593px;
+    max-width: 593px;
+    min-width: 320px;
     margin: auto;
 }
 
