@@ -5,5 +5,58 @@
 :root {
     --font1: 'Archivo', sans-serif;
     --font2: 'Poppins', sans-serif;
+    --color-body1: #E5E5E5;
+    --color-body2: #121214;
+    --color-form: #FAFAFC;
+    --color-font1: #42D3FF;
 }
 
+body {
+    font-family: var(--font2);
+    background-color: var(--color-body1);
+}
+
+body::before { /*cria a cor preta deste plano de fundo*/
+    content: '';
+    width: 100%;
+    height: 368px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-body2);
+    z-index: -1;
+}
+
+.page {
+    max-width: 736px;
+    min-width: 319px;
+    margin: auto;
+}
+
+header {
+    width: 319px;
+    margin-top: 74px;
+}
+
+header h1 {
+    font-family: var(--font1);
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: white;
+}
+
+header p {
+    font-family: var(--font2);
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--color-font1);
+}
+
+form {
+    margin-top: 38px;
+    background-color: var(--color-form);
+    min-height: 300px;
+    border-radius: 8px;
+}
