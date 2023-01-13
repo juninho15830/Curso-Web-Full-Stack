@@ -7,8 +7,21 @@
     --font2: 'Poppins', sans-serif;
     --color-body1: #E5E5E5;
     --color-body2: #121214;
-    --color-form: #FAFAFC;
+    --color-form1: #FAFAFC;
+    --color-form2: #E6E6F0;
     --color-font1: #42D3FF;
+    --color-font2: #4E4958;
+    --color-font3: #C1BCCC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, input, button, select, textarea {
+    font-family: var(--font2);
 }
 
 body {
@@ -45,6 +58,7 @@ header h1 {
     font-size: 36px;
     line-height: 42px;
     color: white;
+    margin-bottom: 24px;
 }
 
 header p {
@@ -56,7 +70,54 @@ header p {
 
 form {
     margin-top: 38px;
-    background-color: var(--color-form);
+    background-color: var(--color-form1);
     min-height: 300px;
     border-radius: 8px;
+    padding: 64px;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset legend {
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+
+    width: 100%;
+    border-bottom: 1px solid var(--color-form2) ;
+    padding-bottom: 16px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper label {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-font2);
+    margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+    margin-left: 12px;
+
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--color-font3);
+}
+
+.input-wrapper input {
+    background: var(--color-form1);
+    border: 1px solid var(--color-form2);
+    border-radius: 8px;
+    height: 56px;
+    padding: 0 24px;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--color-font3);
 }
