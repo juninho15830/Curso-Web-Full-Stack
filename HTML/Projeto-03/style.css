@@ -12,6 +12,10 @@
     --color-font1: #42D3FF;
     --color-font2: #4E4958;
     --color-font3: #6C6A71;
+    --color-footer: #F0F0F4;
+    --color-footer2: #D6D6D6;
+    --color-button: #04D361;
+    --color-button2: #08A04C;
 }
 
 * {
@@ -20,7 +24,7 @@
     box-sizing: border-box;
 }
 
-body, input, button, select, textarea {
+body, input, select, textarea {
     font-family: var(--font2);
 }
 
@@ -72,7 +76,7 @@ form {
     margin-top: 38px;
     background-color: var(--color-form1);
     min-height: 300px;
-    border-radius: 8px;
+    border-radius: 8px 8px 0px 0px;
     padding: 64px;
 
     display: flex;
@@ -194,4 +198,31 @@ fieldset legend {
 
 .checkbox-wrapper input:focus + label::before {
     outline: 2px solid black;
+}
+
+footer {
+    background: var(--color-footer);
+    height: 136px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 64px;
+    margin-bottom: 100px;
+    border-top: 1px solid var(--color-footer2);
+    border-radius: 0px 0px 8px 8px;
+}
+
+footer .button {
+    height: 56px;
+    background: var(--color-button);
+    border: 0;
+    border-radius: 8px;
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: white
+}
+
+footer .button:hover {
+    background: var(--color-button2);
 }
