@@ -19,14 +19,15 @@
             <h1>Crie e compartilhe seu evento.</h1>
             <p>O primeiro passo, é preencher esse formulário de inscrição.</p>
         </header>
-        <form action="">
+        <form id="my-form">
 
             <fieldset>
                 <div class="fieldset-wrapper"> <!--É necessário criar uma div no fieldset para que as configurações do display flex funcionem em seu legend-->
                     <legend>Informações do Evento</legend>
                     <div class="input-wrapper">
                         <label for="event-title">Título do evento <span>(mínimo 8 caracteres)</span></label>
-                        <input type="text" id="event-title"/>
+                        <input type="text" id="event-title" required
+                        minlength="8"/>
                     </div>
 
                     <div class="input-wrapper">
@@ -66,7 +67,7 @@
 
                     <div class="input-wrapper">
                         <label for="event-password">Senha de acesso para os participantes <span>(mínimo 8 caracteres)</span></label>
-                        <input type="password" id="event-password"/>
+                        <input type="password" id="event-password" required minlength="8"/>
                     </div>
 
                     <div class="checkbox-wrapper">
@@ -101,8 +102,9 @@
             </fieldset>
         </form>
 
+        <!--Todo button dentro do form automaticamente é usado para submete-lo para anular isso é necessário usar a propriedade (type="button). Em nosso caso o button está fora do form então colocamos a propriedade (form="") para submetelo.-->
         <footer>
-                <input class="button" type="submit" value="Salvar evento">
+                <button class="button" form="my-form"> Salvar evento</button>
         </footer>
     </div>
 
