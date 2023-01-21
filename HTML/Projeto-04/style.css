@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800&display=swap');
+
+:root {
+    font-size: 62.5%; /*Por padrão 1rem = 16px EX: 40px = 2,5rem. Fazendo isso 1rem = 10px. Esta auteração é usada para criação de fontes responsivas sem precisar ficar fazendo calculos. EX: 40px = 4.0rem*/
+    --font-1: 'Epilogue', sans-serif;
+    --backg-color: #ECE9FD;
+    --font-color1: #7158EF;
+    --font-color2: #090039;
+    --font-color3: rgba(10, 0, 57, 0.64);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: var(--font-1);
+    background-color: var(--backg-color);
+    padding: 6.0rem 2.3rem 6.6rem;
+    font-size: 1.6rem; /*Com esta configuração a página fica com o tamanho padrão de 16px mas responsivo*/
+}
+
+main {
+    max-width: 33.0rem;
+    margin: 0 auto;
+} 
+
+h1 {
+    font-weight: 800;
+    font-size: 4.0rem;
+    line-height: 4.8rem;
+    color: var(--font-color2);
+    margin-bottom: 1.5rem;
+}
+
+main p:first-child {
+    color: var(--font-color1);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 3.2rem;
+    margin-bottom: 1.7rem;
+}
+
+h1 + p {
+    color: var(--font-color3);
+    line-height: 3.2rem;
+    margin-bottom: 3.2rem;
+}
+
+a {
+    color: var(--font-color2);
+    text-decoration: none;
+}
+
+a:hover {
+    color:var(--font-color1);
+}
+
+ul {
+    margin-top: 7.2rem;
+}
+
+ul li {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    color: var(--font-color2);
+    max-width: 25.7rem;
+    display: flex;
+    gap: 3.8rem;
+}
+
+ul li span {
+    font-weight: 800;
+    font-size: 7.2rem;
+    line-height: 8.0rem;
+    letter-spacing: -2px;
+    color: var(--font-color2);
+}
