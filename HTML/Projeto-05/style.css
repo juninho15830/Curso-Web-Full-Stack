@@ -16,10 +16,16 @@
     --bg-color: hsl(var(--hue),22%, 20%);
     --fc-primary: hsl(var(--hue),0%, 100%);
     --fc-secondary: hsl(var(--hue),50%, 80%);
+    --fc-secondary-dark: hsl(var(--hue), 100%, 11%);
 
     font-size: 62.5%;
     --fs-body: 1.6rem;
     --fs-heading: 4rem;
+}
+
+main {
+    display: grid;
+    gap: 3.2rem;
 }
 
 body {
@@ -66,10 +72,68 @@ header h1{
 .card img{
     height: 41.6rem;
     object-fit: cover; /*Colcando a altura de 41,6rem a imagem esticou, então foi usada a propriedade (object-fit: cover;) para evitar este problema. */
+    border-radius: 6px;
+    transition: all 200ms;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+    opacity: 0.4;
 }
 
 .card h2 {
     position: absolute;
     bottom: 5.2rem;
     left: 2.8rem;
+    font-size: var(--fs-heading);
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+}
+
+.card h2 span {
+    border-radius: 2rem;
+    background-color: var(--fc-primary);
+    font-size: var(--fs-body);
+    font-weight: 400;
+    color: var(--fc-secondary-dark);
+    padding: 0 1.6rem;
+    height: 3.8rem;
+    display: inline-flex;
+    align-items: center;
+    width: fit-content; /*deixa a caixa do tamanho do conteúdo*/
+}
+
+header {
+    animation: topdown 700ms 350ms backwards; 
+    /*350ms é o delay, então é necessário usar o "backwards" para que quando a animação termine ela não volte ao começo*/
+}
+
+main {
+    animation: downtop 700ms;
+}
+
+@keyframes topdown { /*@keyframes é uma "at-rule" que serve para criar animações*/
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes downtop {
+    0% {
+        opacity: 0;
+        transform: translatey(15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
