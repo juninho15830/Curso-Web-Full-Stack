@@ -20,12 +20,14 @@
 
     font-size: 62.5%;
     --fs-body: 1.6rem;
-    --fs-heading: 4rem;
+    --fs-heading: clamp(4rem, 1rem + 5vh, 5.6rem);
+    --fs-heading-sm: clamp(3rem, 0.5rem + 2vh, 4rem);
 }
 
 main {
     display: grid;
     gap: 3.2rem;
+    animation: downtop 700ms;
 }
 
 body {
@@ -36,7 +38,8 @@ body {
 }
 
 .page {
-    max-width: 33rem;
+    max-width: clamp(33rem, 30rem + 60vh, 117rem);
+    padding: 0 5rem;
     margin: 0 auto;
 }
 
@@ -48,6 +51,8 @@ img {
 header {
     margin: 10rem 0 8rem;
     text-align: center;
+    animation: topdown 700ms 350ms backwards; 
+    /*350ms é o delay, então é necessário usar o "backwards" para que quando a animação termine ela não volte ao começo*/
 }
 
 header p {
@@ -72,6 +77,7 @@ header h1{
 .card img{
     height: 41.6rem;
     object-fit: cover; /*Colcando a altura de 41,6rem a imagem esticou, então foi usada a propriedade (object-fit: cover;) para evitar este problema. */
+    filter: brightness(0.5) saturate(1.5);
     border-radius: 6px;
     transition: all 200ms;
 }
@@ -85,7 +91,7 @@ header h1{
     position: absolute;
     bottom: 5.2rem;
     left: 2.8rem;
-    font-size: var(--fs-heading);
+    font-size: var(--fs-heading-sm);
     font-weight: 800;
     display: flex;
     flex-direction: column;
@@ -103,15 +109,6 @@ header h1{
     display: inline-flex;
     align-items: center;
     width: fit-content; /*deixa a caixa do tamanho do conteúdo*/
-}
-
-header {
-    animation: topdown 700ms 350ms backwards; 
-    /*350ms é o delay, então é necessário usar o "backwards" para que quando a animação termine ela não volte ao começo*/
-}
-
-main {
-    animation: downtop 700ms;
 }
 
 @keyframes topdown { /*@keyframes é uma "at-rule" que serve para criar animações*/
@@ -135,5 +132,39 @@ main {
     100% {
         opacity: 1;
         transform: translate(0);
+    }
+}
+
+@media (min-width: 700px) {
+    /*.page {
+        max-width: 117rem;
+        padding: 0 5rem;
+    }*/
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 930px) {
+    main {
+        grid-template-areas: "A B B"
+        "C C D";
+    }
+
+    main div:nth-child(1) {
+        grid-area: A;
+    }
+
+    main div:nth-child(2) {
+        grid-area: B;
+    }
+
+    main div:nth-child(3) {
+        grid-area: C;
+    }
+
+    main div:nth-child(4) {
+        grid-area: D;
     }
 }
