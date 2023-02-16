@@ -20,7 +20,7 @@
 */
 
 let option
-let lista = []
+let list = []
 
 while(option != 3){
 
@@ -32,14 +32,18 @@ option = Number(prompt(`Olá usuário! Digite a opção desejada
 
     if(option == 1){
         let item = prompt("Digite o nome do item")
-        lista.push(item)
+        list.push(item)
+
     } else if(option == 2) {
-        if(lista.length == 0) {
+        if(list.length == 0) {
             alert("Não exitem itens cadastrados")
         } else {
-            alert(lista)
+            alert(list)
         }
+
     } else if(option == 3) {
         alert("Tchau!")
+    } else {
+        alert("Opção errada. Tente novamente.")
     }
 }
