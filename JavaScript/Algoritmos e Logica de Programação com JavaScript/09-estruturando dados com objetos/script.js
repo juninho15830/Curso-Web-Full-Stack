@@ -20,8 +20,8 @@ let patients = [
     {
         name:"Arthur",
         age: 4,
-        weight: 17,
-        height: 80,
+        weight: 18,
+        height: 102,
     }
 ]
 
@@ -38,4 +38,4 @@ for(patient of patients) {
     patientsHeight.push(patientsHeight)
 }
 
-alert(patientsNames)
+alert(`O paciente ${patients[0].name} tem ${patients[0].age} anos, pesa ${patients[0].weight} quilos e tem ${patients[0].height} centímetros de altura.`)
