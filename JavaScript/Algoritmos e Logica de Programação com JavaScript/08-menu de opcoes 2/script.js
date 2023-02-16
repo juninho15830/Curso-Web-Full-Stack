@@ -30,14 +30,26 @@ option = Number(prompt(`Olá usuário! Digite a opção desejada
 2. Mostrar itens cadastrados
 3. Sair do programa`))
 
-    if(option == 1){
-        let item = prompt("Digite o nome do item")
-        lista.push(item)
-    } else if(option == 2) {
-        if(lista.length == 0) {
-            alert("Não exitem itens cadastrados")
-        } else {
-            alert(lista)
-        }
+    switch(option){
+        case 1:
+            let item = prompt("Digite o nome do item")
+            lista.push(item)
+            break
+
+        case 2:
+            if(lista.length == 0) {
+                alert("Não exitem itens cadastrados")
+            } else {
+                alert(lista)
+            }
+            break
+
+        case 3:
+            alert("Tchau")
+            break
+
+        default:
+            alert("Opção inválida. Tente novamente")
     }
+
 }
