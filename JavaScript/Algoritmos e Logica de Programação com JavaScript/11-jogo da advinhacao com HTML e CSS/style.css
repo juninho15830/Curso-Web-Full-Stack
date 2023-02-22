@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(287.56deg, #C2E9FB 0%, #A1C4FD 100%);
+    font-size: 1.6rem;
+
+    display: grid; /* essas 3 configurações alinha a caixa no meio da tela, na sequencia colocamos um margin-top de -12rem na caixa main para que ela suba um pouco.*/
+    place-items: center;
+    height: 100vh;
+}
+
+body, button, input {
+    font-family: 'DM Sans', sans-serif;
+}
+
+main {
+    background: #FFFFFF;
+    box-shadow: 0 .2rem .4rem rgba(0, 0, 0 ,0.1);
+    border-radius: .6rem;
+    padding: 4.8rem 6.4rem 6.4rem;
+
+    width: min(42.8rem, 90%);
+    margin-top: -12rem;
+
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    margin-bottom: 1.6rem;
+}
+
+h1, p {
+    color: #34355B;
+}
+
+p {
+    opacity: .8;
+}
+
+form {
+    margin-top: 4.8rem;
+    display: flex;
+    justify-content: center;
+}
+
+input, button {
+    border: none;
+    padding: 1.6rem;
+}
+
+input {
+    background-color: #DCE2E9;
+    width: 6.5rem;
+    border-radius: .4rem 0 0 .4rem;
+}
+
+button {
+    background-color: #7879F1;
+    color: white;
+    font-weight: bold;
+    border-radius: 0 .4rem .4rem 0;
+}
