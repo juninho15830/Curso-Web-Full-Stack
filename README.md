@@ -2,10 +2,10 @@
  
  <h2> HTML </h2>
  
- <a href="https://juninho15830.github.io/Curso-Web-Full-Stack/HTML/Projeto-01/"> Página Projeto 1</a>
- <a href="https://juninho15830.github.io/Curso-Web-Full-Stack/HTML/Projeto-02/"> Página Projeto 2</a>
- <a href="https://juninho15830.github.io/Curso-Web-Full-Stack/HTML/Projeto-03/"> Página Projeto 3</a>
- <a href="https://juninho15830.github.io/Curso-Web-Full-Stack/HTML/Projeto-04/"> Página Projeto 4</a>
+ <a href="https://juninho15830.github.io/Curso-Web-Full-Stack/HTML/Projeto-01/"> Página Projeto 1</a> <br>
+ <a href="https://juninho15830.github.io/Curso-Web-Full-Stack/HTML/Projeto-02/"> Página Projeto 2</a> <br>
+ <a href="https://juninho15830.github.io/Curso-Web-Full-Stack/HTML/Projeto-03/"> Página Projeto 3</a> <br>
+ <a href="https://juninho15830.github.io/Curso-Web-Full-Stack/HTML/Projeto-04/"> Página Projeto 4</a> <br>
  <a href="https://juninho15830.github.io/Curso-Web-Full-Stack/HTML/Projeto-05/"> Página Projeto 5</a>
 
 <h2> JavaScript </h2>
