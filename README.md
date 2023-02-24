@@ -10,6 +10,6 @@
 
 <h2> JavaScript </h2>
 
-<a href="https://juninho15830.github.io/Curso-Web-Full-Stack/JavaScript/Algoritmos%e%Logica%de%Programação%com%JavaScript/11-jogo%da%advinhacao%com%HTML%e%CSS/index.html"> Jogo da Advinhação</a>
+https://juninho15830.github.io/Curso-Web-Full-Stack/JavaScript/Algoritmos%e%Logica%de%Programação%com%JavaScript/11-jogo%da%advinhacao%com%HTML%e%CSS/
 
 <a href="https://juninho15830.github.io/JavaScript/Exercicios%20Praticos/AulaEx03/ex020.html"> Contador</a>
