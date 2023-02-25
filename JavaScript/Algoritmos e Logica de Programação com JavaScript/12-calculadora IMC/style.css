@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/*font-family: 'Roboto', sans-serif;*/
+
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +9,44 @@
 
 :root {
     font-size: 62.5%;
+
+    /*cores*/
+    --tt-heading: #0c3440;
+
+    --tt-label: #00453a;
+    --tt-input: #212529;
+    --ot-input: #02799d;
+    --bd-input: rgba(73, 80, 87, 0.3);
+    --tt-placeholder: rgba(73, 80, 87, 0.5);
+
+    --tt-button: white;
+    --bg-button: #02799d;
+
+    --bg-error: #f03e3e;
+    --tt-error: white;
+
+    /*fonte*/
+    --main-font: 'Roboto', sans-serif;
 }
 
 body {
     background-color: #040924;
     font-size: 1.6rem;
+    font-family: var(--main-font);
+}
+
+.container { /*Essas configurações centraliza o card no meio da tela sem perder suas propriedades de tamanho que estão configuradas logo abaixo.*/
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.card {
+    padding: 4.8rem 6.4rem 6.4rem;
+    background: white;
+    max-width: 42.8rem;
+    margin-inline: auto; /*centraliza o card no meio*/
+
+    box-shadow: 0 .2rem .4rem rgba(0,0,0,0.1); /*Sombra modesta do cartão, ideal para futuras construções */
+    border-radius: .6rem;
 }

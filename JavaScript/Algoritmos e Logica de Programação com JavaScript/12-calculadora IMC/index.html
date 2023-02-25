@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!--Preconect--> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!--Meta-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora IMC</title>
-    <link rel="stylesheet" href="style.css">
 
+    <!--Styles-->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--Script-->
     <script src="script.js" defer></script> <!-- O atributo "defer" faz com que o script carregue depois do html mesmo sendo colocado no começo-->
 </head>
 <body>
     
+    <div class="container">
+        <main class="card">
+            <form action="">
+                <h1 class="title"> Cálculo de IMC</h1>
+                <div class="input-wrapper">
+                    <label for="weight">Peso (kg)</label> <!--O for do label deve ser o mesmo nome do id do input que deseja conectar-->
+                    <input 
+                        id="weight" 
+                        type="text"
+                        placeholder="60" />
+                </div>
 
+                <div class="input-wrapper">
+                    <label for="height">Altura (m)</label>
+                    <input 
+                        id="height" 
+                        type="text"
+                        placeholder="165" />
+                </div>
+
+                <button type="submit">
+                    Calcular IMC
+                    
+                </button>
+            </form>
+        </main>
+    </div>
     
 </html>
