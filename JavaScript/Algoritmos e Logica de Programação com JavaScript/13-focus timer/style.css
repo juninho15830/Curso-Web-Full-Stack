@@ -9,7 +9,7 @@
 :root {
     --bg-color: #121214;
 
-    --base-color: 194; /*Cor base do prjeto*/
+    --base-color: 194; /*Cor base do projeto*/
     --bg-primary-light: hsla(var(--base-color), 100%, 63%, 0.13);
     --primary-color: hsl(var(--base-color), 100%, 63%);
 
