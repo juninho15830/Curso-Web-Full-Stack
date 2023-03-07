@@ -23,6 +23,9 @@ body {
     color: var(--text-color);
 
     font-family: 'Roboto', sans-serif;
+
+    display: grid;
+    min-height: 100vh;
 }
 
 button {
@@ -42,10 +45,21 @@ button {
     fill: var(--primary-color);
 }
 
+button svg {
+    width: clamp(3.2rem, 2rem +12vw,  +  6.4rem);
+}
+
+main {
+    align-self: end;
+    justify-self: center;
+}
+
+
 #timer {
-    font-size: 8.8rem;
+    font-size: clamp(4rem, 4rem + 10vw, 8.8rem);
 
     display: flex;
+    margin-bottom: 1.6rem;
 }
 
 #controls {
@@ -53,6 +67,19 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 3.2rem;
 
     border-radius: 9999px; /*Formato de borda "pill" ou estilo pilula*/
+
+    width: clamp(10rem, 10rem + 30vw, 22.8rem);
+         /*clamp( min ,    ideal    ,    max  );*/
+    height: clamp(8rem, 5rem + 10vw, 10.8rem);
+}
+
+
+footer {
+    align-self: end;
+    justify-self: end;
+
+    padding: 0 4rem 3.2rem 0;
 }
