@@ -7,7 +7,9 @@ export default function Timer({ //dependencias
     let timerTimeOut
     let minutes = Number(minutesDisplay.textContent)
     
-    function updateDisplay(minutes, seconds) {
+    function updateDisplay(newMinutes, seconds) {
+        newMinutes = newMinutes === undefined ? minutes : newMinutes
+        seconds = seconds === undefined ? 0 : seconds
         minutesDisplay.textContent = String(minutes).padStart(2, "0")
         secondsDisplay.textContent = String(seconds).padStart(2, "0")//convertendo para string eu consigo com padStart preencher uma casa antes dos numeros 9 ao 1. (2, é o tanto de casas e "0" é a string que quero usar)
     }
@@ -21,11 +23,13 @@ export default function Timer({ //dependencias
         timerTimeOut = setTimeout(function() {
             let seconds = Number(secondsDisplay.textContent)
             let minutes = Number(minutesDisplay.textContent)
+            let isFinished = minutes <= 0 && seconds <= 0
     
             updateDisplay(minutes, 0)
     
-            if (minutes <= 0) {
-                resetControls()    
+            if (isFinished) {
+                resetControls()
+                updateDisplay()    
                 return
             }
     
