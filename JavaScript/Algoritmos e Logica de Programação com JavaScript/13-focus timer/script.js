@@ -1,14 +1,30 @@
 import Controls from "./modules/controls.js"
 import Timer from "./modules/timer.js" //importamos a função factory
+import Sound from "./modules/sounds.js"
+import {
+    buttonPause,
+    buttonPlay,
+    buttonSet,
+    buttonSoundOff,
+    buttonSoundOn,
+    buttonStop,
+    secondsDisplay,
+    minutesDisplay,
+} from "./modules/elements.js"
 
-const buttonPlay = document.querySelector('.play')
-const buttonPause = document.querySelector('.pause')
-const buttonStop = document.querySelector('.stop')
-const buttonSet = document.querySelector('.set')
-const buttonSoundOn = document.querySelector('.sound-on')
-const buttonSoundOff= document.querySelector('.sound-off')
-const minutesDisplay = document.querySelector('.minutes')
-const secondsDisplay = document.querySelector('.seconds')
+/*import { elements } from "./modules/elements.js"
+
+const { 
+    buttonPause,
+    buttonPlay,
+    buttonSet,
+    buttonSoundOff,
+    buttonSoundOn,
+    buttonStop,
+    minutesDisplay,
+    secondsDisplay
+} = elements 
+Esta é outra auternativa para usar os elementos aqui, para isso basta exportar criando um objeto também */
 
 const controls = Controls({
     buttonPause,
@@ -23,30 +39,36 @@ const timer = Timer({ //aqui criamos uma variavel que recebe a função importad
     resetControls: controls.reset
 })
 
+const sound = Sound()
+
 buttonPlay.addEventListener('click', function() {
     controls.play()
     timer.countdown()
-
+    sound.pressButton()
 })
 
 buttonPause.addEventListener('click', function() {
     controls.pause()
     timer.hold()
+    sound.pressButton()
 })
 
 buttonStop.addEventListener('click', function() {
     controls.reset()
     timer.reset()
+    sound.pressButton()
 })
 
 buttonSoundOff.addEventListener('click', function() {
     buttonSoundOff.classList.add('hide')
     buttonSoundOn.classList.remove('hide')
+    sound.bgAudio.pause()
 })
 
 buttonSoundOn.addEventListener('click', function() {
     buttonSoundOn.classList.add('hide')
     buttonSoundOff.classList.remove('hide')
+    sound.bgAudio.play()
 })
 
 buttonSet.addEventListener('click', function() {

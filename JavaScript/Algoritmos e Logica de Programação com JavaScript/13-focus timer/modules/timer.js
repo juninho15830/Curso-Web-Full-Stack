@@ -1,3 +1,5 @@
+import Sounds from "./sounds.js"
+
 export default function Timer({ //dependencias
     minutesDisplay,
     secondsDisplay,
@@ -10,7 +12,7 @@ export default function Timer({ //dependencias
     function updateDisplay(newMinutes, seconds) {
         newMinutes = newMinutes === undefined ? minutes : newMinutes
         seconds = seconds === undefined ? 0 : seconds
-        minutesDisplay.textContent = String(minutes).padStart(2, "0")
+        minutesDisplay.textContent = String(newMinutes).padStart(2, "0")
         secondsDisplay.textContent = String(seconds).padStart(2, "0")//convertendo para string eu consigo com padStart preencher uma casa antes dos numeros 9 ao 1. (2, é o tanto de casas e "0" é a string que quero usar)
     }
     
@@ -29,12 +31,13 @@ export default function Timer({ //dependencias
     
             if (isFinished) {
                 resetControls()
-                updateDisplay()    
+                updateDisplay() 
+                Sounds().timeEnd()
                 return
             }
     
             if (seconds <= 0) {
-                seconds = 60
+                seconds = 3
                 --minutes
             }
         
