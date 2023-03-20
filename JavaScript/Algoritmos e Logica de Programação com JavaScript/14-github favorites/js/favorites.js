@@ -1,30 +1,29 @@
+export class GithubUser {
+    static search(username) {
+        const endpoint = `https://api.github.com/users/${username}`
+
+        return fetch(endpoint)//fetch é uma promessa
+        .then(data => data.json())
+        .then(({ login, name, public_repos, followers}) => ({
+            login,
+            name,
+            public_repos,
+            followers
+        }))
+    }
+}
+
 //classe que contem a lógica dos dados, aqui os daddos são estruturados.
 export class Favorites {
     constructor(root) {
         this.root = document.querySelector(root)
         this.load()
+
+        GithubUser.search('juninho15830').then(user => console.log(user))
     }
 
     load() {
         this.entries = JSON.parse(localStorage.getItem('@github-favorites:')) || []
-
-    
-        /*[
-            {
-            login: 'juninho15830',
-            name: "Juninho",
-            public_repos: '15',
-            followers: '5432'
-            },
-            {
-                login: 'maykbrito',
-                name: "Mayk Brito",
-                public_repos: '76',
-                followers: '120000'
-            }
-        ]
-        */
-
     }
 
     delete(user) { // filter é uma Higher-order function que serve para filtrar um elemento dentro do array.
