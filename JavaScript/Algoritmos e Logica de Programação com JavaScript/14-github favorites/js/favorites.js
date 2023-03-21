@@ -26,6 +26,10 @@ export class Favorites {
         this.entries = JSON.parse(localStorage.getItem('@github-favorites:')) || []
     }
 
+    async add(username) {
+        const user = await GithubUser.search(username)
+    }
+
     delete(user) { // filter é uma Higher-order function que serve para filtrar um elemento dentro do array.
         const filteredEntries = this.entries
         .filter(entry => entry.login !== user.login)
@@ -43,6 +47,16 @@ export class FavoritesView extends Favorites {
         this.tbody = this.root.querySelector('table tbody')
 
         this.update()
+        this.onadd()
+    }
+
+    onadd() {
+        const addButton = this.root.querySelector('.search button')
+        addButton.onclick = () => { //value é apenas o valor que aplicação recebe da caixa de texto
+            const { value }= this.root.querySelector('.search input')
+
+            this.add(value)
+        }
     }
 
     update() {
