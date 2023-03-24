@@ -2,13 +2,29 @@ npm init -y = cria o JSON da API.
 
 npm install express -save = Instala a Framework Express. A partir desta instalção nodejs cria a pasta node_modules e o arquivo package-lock.json que carrega todas as configurações da aplicação.
 
-crie o arquivo .gitignore, dentro dele coloque node_modules, assim quando um comit for feito a pasta node_modules não vai ser comitada, pois se ela for apagada basta colocar npm install no terminal que ela volta puxando as configuralções dos arquivos json. 
+Crie o arquivo .gitignore, dentro dele coloque node_modules, assim quando um comit for feito a pasta node_modules não vai ser comitada, pois se ela for apagada basta colocar npm install no terminal que ela volta puxando as configuralções dos arquivos json. 
 
-crie uma pasta src, em seguida crie um arquivo server.js dentro da mesma e faça as seguintes configurações:
-
+Crie uma pasta src, em seguida crie um arquivo server.js dentro da mesma e faça as seguintes configurações:
+_ _ _ 
 	const express = require("express");//Importa o express
 
 	const app = express();//Inicializa o Express
 
 	const PORT = 3333;
 	app.listen(PORT, () => console.log(`Server is running on Port ${PORT}`));
+_ _ _ 
+
+
+Para inicializar a API basta executar o server.js com o node:
+_ _ _ 
+	node src/server.js
+_ _ _
+Se quiser encerrar a aplicação basta apertar Contrl + C no terminal.
+
+Ou então podemos fazer uma alteração na configuração scripts do arquivo package.json para inicializarmos :
+_ _ _
+	"scripts": {
+		"start": "node ./src/server.js
+	},
+_ _ _
+Deste modo não precisamos digitar o comando "node src/server" e sim "npm start"
