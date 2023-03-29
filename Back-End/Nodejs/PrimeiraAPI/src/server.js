@@ -2,11 +2,10 @@ const express = require("express");//Importa o express
 
 const app = express();//Inicializa o Express
 
-app.get("/mensage/:id/:user", (request, response) => {
-    response.send(`
-        Mensagem ID: ${request.params.id}.
-        Para o usuário: ${request.params.user}.
-    `);
+app.get("/message/:id/:user", (request, response) => {
+    const { id, user } = request.params;
+
+    response.send(`Mensagem ID: ${id}. Nome do usuário: ${user}.`);
 });
 
 app.get("/users", (request, response) => {
