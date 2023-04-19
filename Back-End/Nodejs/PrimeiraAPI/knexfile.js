@@ -12,6 +12,6 @@ module.exports = {
     migrations: {
       directory: path.resolve(__dirname, "src", "database", "knex", "migrations")//Aqui colocamos o caminho da nossa migration, que é responsavel pelo versionamento do nosso banco.
     },
-    useNullAsDeFault: true
+    useNullAsDefault: true
   },
 };
