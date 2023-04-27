@@ -12,6 +12,14 @@ export default createGlobalStyle`
         color: ${({ theme}) => theme.COLORS.WHITE};
     }
 
+    -webkit-font-smoothing: antialiased;
+
+    body, input, button, textarea {
+        font-family: 'Roboto Slab', serif;
+        font-size: 16px;
+        outline: none;
+    }
+
     a {
         text-decoration: none;
     }
