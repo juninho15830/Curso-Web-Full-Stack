@@ -14,7 +14,3 @@
 <a href="https://juninho15830.github.io/Curso-Web-Full-Stack/Front-End/JavaScript/Projetos%20em%20JavaScript/Calculadora%20IMC">  Calculadora IMC </a> <br>
 <a href="https://juninho15830.github.io/Curso-Web-Full-Stack/Front-End/JavaScript/Projetos%20em%20JavaScript/Focus%20timer"> FocusTimer - Pomodoro </a> <br>
 <a href="https://juninho15830.github.io/Curso-Web-Full-Stack/Front-End/JavaScript/Projetos%20em%20JavaScript/Github favorites"> Github Favorites </a> <br>
-
-<h2> React </h2>
-
-<a href="https://juninho15830.github.io/Curso-Web-Full-Stack/Front-End/Projetos-React/rocketnotes/"> Rocket Notes</a> <br>
