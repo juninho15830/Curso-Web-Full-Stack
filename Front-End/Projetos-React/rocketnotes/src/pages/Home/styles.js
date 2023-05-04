@@ -56,7 +56,8 @@ export const Search = styled.div`
 
 export const Content = styled.div`
     grid-area: content;
-    background: blue;
+    padding: 0 64px;
+    overflow-y: auto;
 `;
 
 export const NewNote = styled.button`
