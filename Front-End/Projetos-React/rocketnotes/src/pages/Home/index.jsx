@@ -1,4 +1,4 @@
-import { FiPlus, FiSearch } from 'react-icons/fi';
+import { FiPlus } from 'react-icons/fi';
 
 import { Container, Brand, Menu, Search, Content, NewNote } from './styles';
 
@@ -24,7 +24,7 @@ export function Home() {
             </Menu>
 
             <Search>
-                <Input placeholder="Pesquisar pelo título" icon={FiSearch}/>
+                <Input placeholder="Pesquisar pelo título"/>
             </Search>
 
             <Content>
@@ -40,7 +40,7 @@ export function Home() {
                 </Section>
             </Content>
 
-            <NewNote>
+            <NewNote to="/new">
                 <FiPlus />
                 Criar nota
             </NewNote>
