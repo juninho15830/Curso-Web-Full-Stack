@@ -1,5 +1,5 @@
 {
-  "name": "primeira-api",
+  "name": "api",
   "version": "1.0.0",
   "description": "API desenvolvida no programa Explorer da Rocketseat",
   "main": "index.js",
