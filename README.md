@@ -13,5 +13,5 @@
 <a href="https://juninho15830.github.io/Curso-Web-Full-Stack/Front-End/JavaScript/Projetos%20em%20JavaScript/Jogo%20da%20advinhacao%20com%20HTML%20e%20CSS"> Jogo da Advinhação</a> <br>
 <a href="https://juninho15830.github.io/Curso-Web-Full-Stack/Front-End/JavaScript/Projetos%20em%20JavaScript/Calculadora%20IMC">  Calculadora IMC </a> <br>
 <a href="https://juninho15830.github.io/Curso-Web-Full-Stack/Front-End/JavaScript/Projetos%20em%20JavaScript/Focus%20timer"> FocusTimer - Pomodoro </a> <br>
-<a href="https://juninho15830.github.io/Curso-Web-Full-Stack/Front-End/JavaScript/Projetos%20em%20JavaScript/Github favorites"> Github Favorites </a> <br>
-<a href="https://juninho15830.github.io/Curso-Web-Full-Stack/Front-End/JavaScript/Projetos%20em%20JavaScript/The%20Witcher"> Github Favorites </a> <br>
+<a href="https://juninho15830.github.io/Curso-Web-Full-Stack/Front-End/JavaScript/Projetos%20em%20JavaScript/Github%20favorites"> Github Favorites </a> <br>
+<a href="https://juninho15830.github.io/Curso-Web-Full-Stack/Front-End/JavaScript/Projetos%20em%20JavaScript/The%20Witcher"> The Witcher </a> <br>
