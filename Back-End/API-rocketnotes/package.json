@@ -1,0 +1,14 @@
+{
+  "name": "api-rocketnotes",
+  "version": "1.0.0",
+  "description": "API da aplicação Rocketnotes desenvolvida no programa Explorer da Rocketseat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jair Redigolo Junior",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

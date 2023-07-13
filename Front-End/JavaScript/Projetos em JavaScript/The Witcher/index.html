@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto The Witcher</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img class="logo" src="./src/images/logo.png" alt="Logo The Witcher">
+    </header>
+
+    <main class="selecao-de-personagens">
+      <section class="personagens">
+        <h1 class="titulo">Selecione um personagem</h1>
+        <ul class="lista-de-personagens">
+          <li class="personagem selecionado" id="geralt" data-name="Geralt de Rivia" data-description="Também conhecido como Lobo Branco, é um bruxo com habilidades especiais para caçar monstros.">
+            <img
+              src="./src/images/geralt-head.png"
+              alt="Personagem Geralt de Rivia"
+            />
+          </li>
+          <li class="personagem" id="yennefer" data-name="Yennefer de Vengerberg" data-description="É uma poderosa feiticeira e o grande amor de Geralt, alem de uma figura materna para Ciri e uma amiga proxima de Triss.">
+            <img
+              src="./src/images/yennefer-head.png"
+              alt="Personagem Yennefer"
+            />
+          </li>
+
+          <li class="personagem" id="ciri" data-name="Ciri" data-description="Também conhecida como a Leoazinha de Cintra, filha única de Pavetta a princesa de Cintra. Foi treinada por Vesemir e Geralt em Kaer Morhen e carrega em suas veias sangue ancestral, o que a faz ser muito poderosa e capaz de abrir portais para outros mundos. ">
+            <img
+              src="./src/images/ciri-head.png"
+              alt="Personagem Ciri"
+            />
+          </li>
+
+          <li class="personagem" id="triss" data-name="Triss Merigold" data-description="Triss Merigold é uma feiticeira Temeriana, grande amiga de Yennefer e apaixonada por Geralt. Cuidou de Ciri por um tempo e é como uma irmã para ela.">
+            <img
+              src="./src/images/triss-head.png"
+              alt="Personagem Triss"
+            />
+          </li>
+
+          <li class="personagem" id="vesemir" data-name="Vesemir" data-description="Vesemir é o bruxo mais velho de Kaer Morhen e figura paterna para Geralt. Ele é um excelente esgrimista e tem grande conhecimento sobre monstros.">
+            <img
+              src="./src/images/vesemir-head.png"
+              alt="Personagem Vesemir"
+            />
+          </li>
+
+          <li class="personagem" id="jaskier" data-name="Jaskier" data-description="Jaskier é um poeta, menestrel, bardo e amigo próximo do bruxo Geralt de Rívia.">
+            <img
+              src="./src/images/jaskier-head.png"
+              alt="Personagem Jaskier"
+            />
+          </li>
+
+          <li class="personagem" id="shani" data-name="Shani" data-description="Shani é uma médica e estudante da Academia de Oxenfurt. Ela teve um pequeno envolvimento amoroso com Geralt. Muitos anos após a saga se tornou reitora da faculdade de medicina e herbologia da Academia de Oxenfurt.">
+            <img
+              src="./src/images/shani-head.png"
+              alt="Personagem Shani"
+            />
+          </li>
+
+          <li class="personagem" id="eredin" data-name="Eredin Bréacc Glass" data-description="Foi um Aen Elle e lider da cavalaria élfica conhecida como Dearg Ruadhri, que significa Cavaleiros Vermelhos. No mundo humano ele é conhecido como o Rei da Cavalaria Selvagem, um grupo de espectros que persegue Ciri por causa do sangue antigo dela.">
+            <img
+              src="./src/images/eredin-head.png"
+              alt="Personagem Eredin"
+            />
+          </li>
+        </ul>
+      </section>
+      <section class="personagem-selecionado">
+        <img
+          class="personagem-grande"
+          src="./src/images/geralt.png"
+          alt="Personagem Selecionado"
+        />
+
+        <div class="informacoes-personagem">
+          <h2 class="nome-personagem" id="nome-personagem">Geralt</h2>
+          <p class="descricao-personagem" id="descricao-personagem">
+            Também conhecido como Lobo Branco, é um bruxo com habilidades especiais para caçar monstros.
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="js/index.js"></script>
+  </body>
+</html>
