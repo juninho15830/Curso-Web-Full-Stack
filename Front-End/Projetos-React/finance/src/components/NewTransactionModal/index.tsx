@@ -73,6 +73,12 @@ export function NewTransactionModal({ isOpen, onRequestClose}: NewTransactionMod
                     onChange={event => setAmount(Number(event.target.value))}
                  />
 
+                <input
+                    placeholder="Categoria"
+                    value={category}
+                    onChange={event => setCategory(event.target.value)}
+                />
+
                 <TransactionTypeContainer>
                     <RadioBox
                         type="button"
@@ -95,11 +101,6 @@ export function NewTransactionModal({ isOpen, onRequestClose}: NewTransactionMod
                     </RadioBox>
                 </TransactionTypeContainer>
 
-                <input
-                    placeholder="Categoria"
-                    value={category}
-                    onChange={event => setCategory(event.target.value)}
-                />
 
                 <button type="submit">
                     Cadastrar
