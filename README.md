@@ -15,7 +15,3 @@
 <a href="https://juninho15830.github.io/Curso-Web-Full-Stack/Front-End/JavaScript/Projetos%20em%20JavaScript/Focus%20timer"> FocusTimer - Pomodoro </a> <br>
 <a href="https://juninho15830.github.io/Curso-Web-Full-Stack/Front-End/JavaScript/Projetos%20em%20JavaScript/Github%20favorites"> Github Favorites </a> <br>
 <a href="https://juninho15830.github.io/Curso-Web-Full-Stack/Front-End/JavaScript/Projetos%20em%20JavaScript/The%20Witcher"> The Witcher </a> <br>
-
-//<h2> React </h2>
-
- //<a href="https://juninho15830.github.io/Curso-Web-Full-Stack/Front-End/Projetos-React/finance/deploy"> Gestão Financeira </a>
